@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Điện Thoại Shop — điện thoại chính hãng</title>
+    <meta name="description" content="Mua điện thoại chính hãng iPhone, Samsung, Xiaomi, OPPO. Đặt hàng online, thanh toán khi nhận hàng." />
+    <link rel="stylesheet" href="/shop.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Bỏ qua điều hướng</a>
+    <header class="top">
+      <div class="wrap bar">
+        <a class="logo" href="#/">📱 Điện Thoại Shop</a>
+        <search class="search">
+          <form id="search">
+            <label class="sr" for="q">Tìm điện thoại</label>
+            <input id="q" type="search" placeholder="Tìm iPhone, Galaxy, Xiaomi…" maxlength="100" autocomplete="off" />
+            <button type="submit">Tìm</button>
+          </form>
+        </search>
+        <nav class="nav" aria-label="Chính">
+          <a href="#/tra-cuu">Tra cứu đơn</a>
+          <a href="#/so-sanh">So sánh <span id="cmp-count" class="badge" hidden>0</span></a>
+          <a href="#/gio-hang" class="cart-link">Giỏ hàng <span id="cart-count" class="badge" hidden>0</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1"></main>
+    <footer class="foot">
+      <div class="wrap">
+        <p>Thanh toán khi nhận hàng (COD) · Giao toàn quốc · Hàng chính hãng, bảo hành theo nhà sản xuất.</p>
+        <p class="muted">© Điện Thoại Shop</p>
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript><p class="wrap">Cần bật JavaScript để mua hàng.</p></noscript>
+    <script type="module" src="/shop.js"></script>
+  </body>
+</html>

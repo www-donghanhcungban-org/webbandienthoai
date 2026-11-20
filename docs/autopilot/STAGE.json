@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "cycle": "C-001",
+  "stage": 1,
+  "status": "active",
+  "submitted": null,
+  "history": [
+    {
+      "event": "init",
+      "cycle": "C-001",
+      "stage": 1,
+      "at": "2026-11-20T06:22:01+00:00",
+      "session": "511e94db-5756-5809-854f-b8bad5ed6e83"
+    }
+  ]
+}

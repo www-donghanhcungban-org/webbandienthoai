@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+__pycache__/
+junit.xml
+*.log
+.env
+.env.*
+
+# X-Templates: trạng thái autopilot cục bộ, settings cá nhân
+.autopilot/
+.claude/settings.local.json

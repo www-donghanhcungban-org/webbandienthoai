@@ -1,0 +1,5 @@
+# Ngoại lệ quét phụ thuộc (BASE-DEP-004): mỗi GHSA thêm vào ignoreGhsas phải có dòng cùng id trong audit-exceptions.json
+# (lý do, người duyệt, hạn); `pnpm audit:exceptions` và test của khung ghim hai file khớp nhau. Không dùng để hạ ngưỡng
+# `--audit-level`. Danh sách rỗng là trạng thái bình thường; gỡ ngoại lệ ngay khi có bản vá hoặc advisory bị rút.
+auditConfig:
+  ignoreGhsas: []

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f2" />
+    <title>Sổ tay nhóm</title>
+    <link rel="stylesheet" href="/notes.css" />
+    <script type="module" src="/notes.js"></script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="brand"><span class="book-icon" aria-hidden="true"></span>Sổ tay nhóm</div>
+      <button id="logout" type="button" class="quiet" hidden>Đăng xuất</button>
+    </header>
+    <main>
+      <noscript>Hãy bật JavaScript để đăng nhập và lưu ghi chú.</noscript>
+      <section id="login-panel" class="login-layout" aria-labelledby="login-title">
+        <div class="cover" aria-hidden="true"><div class="notebook"><div class="rules"></div></div></div>
+        <div class="login-card">
+          <h1 id="login-title">Đăng nhập</h1>
+          <p class="subtitle">Mở sổ tay của nhóm bạn.</p>
+          <form id="login-form" method="post">
+            <label for="email">Email</label>
+            <input id="email" type="email" autocomplete="username" maxlength="320" required />
+            <label for="password">Mật khẩu</label>
+            <input id="password" type="password" autocomplete="current-password" maxlength="1000" required />
+            <button type="submit" class="primary">Đăng nhập</button>
+          </form>
+        </div>
+      </section>
+      <section id="workspace" hidden aria-labelledby="workspace-title">
+        <h1 id="workspace-title">Ghi chú của nhóm</h1>
+        <div class="workspace-grid">
+          <section class="write-card" aria-labelledby="composer-title">
+            <h2 id="composer-title">Ghi chú mới</h2>
+            <form id="note-form" method="post">
+              <label for="note-body">Nội dung</label>
+              <textarea id="note-body" rows="6" maxlength="10000" required></textarea>
+              <button type="submit" class="primary">Lưu ghi chú</button>
+            </form>
+          </section>
+          <section class="entries" aria-labelledby="entries-title">
+            <div class="list-head">
+              <h2 id="entries-title">Mới nhất</h2>
+              <button id="refresh" type="button" class="quiet">Tải lại</button>
+            </div>
+            <p id="empty" hidden>Nhóm chưa có ghi chú nào.</p>
+            <ul id="notes-list"></ul>
+          </section>
+        </div>
+      </section>
+      <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </main>
+  </body>
+</html>
